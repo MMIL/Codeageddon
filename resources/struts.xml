@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+
+<package name="Action" extends="struts-default">
+
+
+
+<action name="login" class="Action.LogIn">
+    <interceptor-ref name="defaultStack"/>
+	<result name="login">/Ques.jsp</result>
+	<result name="error">/logIn.html</result>
+	
+</action>
+
+<action name="logout" class="Action.LogIn" method="logout">
+    <interceptor-ref name="defaultStack"/>
+	<result name="success">/index.html</result>
+	
+</action>
+
+</package>
+
+</struts>

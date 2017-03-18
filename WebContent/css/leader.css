@@ -1,0 +1,66 @@
+body{
+	margin: 0px;
+}
+.image{
+	background-image: url('http://media.idownloadblog.com/wp-content/uploads/2015/04/ipad_air_31365_game_of_thrones.jpg');
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	background-size: cover;
+	position: fixed;
+	z-index: -1;
+	/*filter: blur(5px);
+	-webkit-filter: blur(5px);*/
+	filter: grayscale(1);
+}
+table {
+	margin-top: 100px;
+	filter: none;
+	z-index: 2;
+}
+tbody#tr03 tr:nth-child(odd){
+	background-color: #C6A1A1;  
+	padding: 55px;
+	text-align: center;
+	opacity: 0.9;
+	color: #240300;
+}
+tbody#tr03 td{
+	font-weight: bolder;
+	font-size: 15px;
+	font-family: arial;
+	font-family: 'Quicksand', sans-serif;
+}
+h3{
+	font-size: 55px;
+	color: #C58433;
+	margin-left: 10px;
+	margin-top: 20px;
+
+}
+tbody#tr03 tr:nth-child(even){
+	background-color: #FF9191;
+	text-align: center;
+	opacity: 0.7;
+	font-weight: 50px;
+	color: #240300;
+	font-family: 'Quicksand', sans-serif;
+}
+thead#tr02 th{
+	background-color: #530202;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	font-size: 20px;
+	border-right: 1px solid white;
+	opacity: 0.9;
+	font-family: 'Roboto',sans-serif;
+}
+tbody#tr03 tr:hover{
+	opacity: 0.9;
+}
+tbody#tr03 td:hover{
+	font-size: 20px;
+	font-weight: bolder;
+}
